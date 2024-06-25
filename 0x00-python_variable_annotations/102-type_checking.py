@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Correcting annotations
 """
-from typing import List, Tuple
+from typing import List, Tuple, Union
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
+def zoom_array(lst: Tuple, factor: Union[int, float] = 2) -> List:
     """Annotation added
     """
     zoomed_in: List = [
