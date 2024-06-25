@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Correcting Annotation
 """
-from typing import Any, Iterable, Optional
+from typing import Any, Sequence, Union
 
 
 # The types of the elements of the input are not know
-def safe_first_element(lst: Iterable[Any]) -> Optional[Any]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """Correcting Annotaion
     """
     if lst:

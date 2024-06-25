@@ -8,7 +8,7 @@ T = TypeVar('T')
 
 
 def safely_get_value(
-        dct: Mapping, key: Any, default: Optional[T] = None) -> Union[Any, T]:
+        dct: Mapping, key: Any, default: Union[T, None] = None) -> Union[Any, T]:
     """Correctin Annotation
     """
     if key in dct:
